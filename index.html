@@ -1,0 +1,59 @@
+<body class="bg-gray-50 text-slate-800 font-sans h-screen flex overflow-hidden">
+  
+  <aside class="w-64 bg-slate-900 text-white flex-shrink-0 flex flex-col transition-all duration-300">
+    <div class="p-6 border-b border-slate-700">
+      <h1 class="text-xl font-bold tracking-wider text-blue-400">UNIDO LMS <span class="text-xs text-slate-400 block font-normal">Prototype v1.0</span></h1>
+    </div>
+    
+    <nav class="flex-1 overflow-y-auto py-4">
+      <ul class="space-y-1 px-3">
+        <li><a href="#" id="nav-overview" class="block px-4 py-3 rounded-lg bg-blue-600 text-white font-medium">Overview</a></li>
+        <li><a href="#" id="nav-modules" class="block px-4 py-3 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-white transition-colors">Modules</a></li>
+        <li><a href="#" id="nav-tracking" class="block px-4 py-3 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-white transition-colors">Tracking</a></li>
+        <li><a href="#" id="nav-docs" class="block px-4 py-3 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-white transition-colors">Documentation</a></li>
+      </ul>
+    </nav>
+
+    <div class="p-4 border-t border-slate-700 text-xs text-slate-500">
+      User: Intern Candidate<br>
+      Status: <span class="text-green-400">● Online</span>
+    </div>
+  </aside>
+
+  <main class="flex-1 overflow-y-auto bg-gray-50 p-8 relative">
+    
+    <header class="flex justify-between items-center mb-8">
+      <div>
+        <h2 class="text-2xl font-bold text-slate-800" id="page-title">Dashboard Overview</h2>
+        <p class="text-slate-500 text-sm">Welcome back, here is your learning progress.</p>
+      </div>
+      <div class="flex items-center gap-4">
+        <button class="bg-white border border-gray-200 px-4 py-2 rounded-lg text-sm font-medium shadow-sm hover:bg-gray-50 text-slate-600">Feedback</button>
+        <div class="w-10 h-10 rounded-full bg-blue-100 border border-blue-200 flex items-center justify-center text-blue-600 font-bold">A</div>
+      </div>
+    </header>
+
+    <div id="content-area" class="max-w-5xl mx-auto space-y-6">
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+          <div class="text-slate-400 text-sm font-medium uppercase mb-2">Total Progress</div>
+          <div class="text-3xl font-bold text-blue-600">0%</div>
+          <div class="w-full bg-gray-100 rounded-full h-2 mt-4"><div class="bg-blue-600 h-2 rounded-full" style="width: 0%"></div></div>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+          <div class="text-slate-400 text-sm font-medium uppercase mb-2">Modules Active</div>
+          <div class="text-3xl font-bold text-slate-800">3</div>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+          <div class="text-slate-400 text-sm font-medium uppercase mb-2">Tasks Completed</div>
+          <div class="text-3xl font-bold text-emerald-600">0/7</div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
